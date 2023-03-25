@@ -1,0 +1,25 @@
+html, body {
+    width: 100;
+}
+body{
+    background-color: rgb(65, 66, 76);
+    font-family: 'Rubik', sans-serif;    
+}
+
+.information-container{
+    display: flex;
+    flex-flow: row wrap;
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+.information span {
+    color: red;
+}

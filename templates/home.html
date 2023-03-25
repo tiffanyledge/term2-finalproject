@@ -3,23 +3,26 @@
 <html>
     <head>
         <title>Stocks</title>
-        <!-- <link rel="stylesheet" href="/static/style.css"> -->
+        <link rel="stylesheet" href="/static/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">           
       </html>
     <body>
-    {% for stock in data %}
-        <div class="information">    
-            <p>{{stock["symbol"]}}</p>
-            <p>{{stock["name"]}}</p>
-            <p>{{stock["currency"]}}</p>
-            <p>{{stock["exchange"]}}</p>
-            <p>{{stock["mic_code"]}}</p>
-            <p>{{stock["country"]}}</p>
-            <p>{{stock["type"]}}</p>
+    
+        <div class="information-container">
+            {% for stock in data["stock-data"] %}
+            <div class="information">    
+                <span>{{stock["symbol"]}}</span>
+                <span>{{stock["name"]}}</span>
+                <span>{{stock["currency"]}}</span>
+                <span>{{stock["exchange"]}}</span>
+                <span>{{stock["mic_code"]}}</span>
+                <span>{{stock["country"]}}</span>
+                <span>{{stock["type"]}}</span>
+            </div>
+            {% endfor %}
         </div>
-    {% endfor %}
 
 <form action="/" method='post'>
 </form>
